@@ -70,3 +70,42 @@ Enjoy!
 [11]: https://symfony.com/doc/3.3/logging.html
 [13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
 [14]: https://symfony.com/doc/current/setup/built_in_web_server.html
+
+
+
+
+# BlogPerso
+
+Welcome to the source code of the BlogPerso web application.  
+
+La documentation, en français, est stockée dans `app/Resources/doc`. Elle est à maintenir avec le code !
+[Voir sur Github](https://github.com/EtewaZINSOU/BlogPerso/tree/master/app/Resources/doc)
+
+Les documents indispensables à lire :
+ * [Setup](app/Resources/doc/Setup.md)
+ * [Quick start](app/Resources/doc/Quickstart.md)
+ * [Testing](app/Resources/doc/Testing.md)
+ * [Coding style](app/Resources/doc/CodingStyle.md)
+ * [How to PR](app/Resources/doc/PR.md)
+ 
+Documents de référence :
+ * [Conception](app/Resources/doc/Conception.md)
+ * [Command]((app/Resources/doc/Command.md))
+ * [API doc (en local)](http://jarvis.local:8080/app_dev.php/api/doc)
+
+Documents sur les parties techniques un peu avancées :
+ * [Doctrine Migration](app/Resources/doc/Migration.md)
+ * [Évènements métier](app/Resources/doc/Events.md)
+ * [Bus de commande](app/Resources/doc/CommandBus.md)
+ * [Webmail AfterLogic](app/Resources/doc/Webmail.md)
+ * [Selectize avec entrée libre](app/Resources/doc/ChoiceWithAddType.md)
+ * Javascript :
+   * [Inclure des dépendences](app/Resources/doc/JS/GulpInclude.md)
+   * [LazyInclude et LazyIframe](app/Resources/doc/JS/LazyInclude.md)
+   * [LazyLoad](app/Resources/doc/JS/LazyLoad.md)
+   * [Traduction](app/Resources/doc/JS/JsTranslations.md)
+ * Modal
+   * [Comment ajouter une modal](app/Resources/doc/Modal/Usage.md)
+   * [Modal avant suppression](app/Resources/doc/Modal/ModalBeforeDelete.md)
+ * Editeur Wysiwyg
+   * [Usage](app/Resources/doc/Tinymce/Usage.md)
