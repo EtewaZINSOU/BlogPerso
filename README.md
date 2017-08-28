@@ -1,3 +1,26 @@
+#Généralités
+Ce document va décrire les différentes entités et leur rôle. Il met en place le vocabulaire *unique* (et leurs noms en français).
+Dans le code, tout doit être en anglais.
+
+
+Spécifications fonctionnelles détaillées
+
+# Architecture du site
+Le site est doit être organisé en 4 parties:
+  * Accueil: C’est la home page site 
+  * Réalisation: 
+  * Formation: 
+  * Contact:
+# Modules dynamiques:
+  * Contact:
+  * Connexion:
+  * Admin:
+  * Commentaire et Notation:
+  
+ #Annexes:
+
+
+
 
 # BlogPerso
 
@@ -27,6 +50,8 @@ Documents sur les parties techniques un peu avancées :
    * [**Comment ajouter une modal**][12]
    * [**Modal avant suppression**][13]
    
+ * Automatisation du front
+   * [**Utilisation bower et Grunt**][14]
    
    [1]: https://github.com/EtewaZINSOU/BlogPerso/tree/master/app/Resources/doc
    [2]: app/Resources/doc/Setup.md
@@ -41,6 +66,7 @@ Documents sur les parties techniques un peu avancées :
    [11]: app/Resources/doc/JS/JsTranslations.md
    [12]: app/Resources/doc/Modal/Usage.md
    [13]: app/Resources/doc/Modal/ModalBeforeDelete.md
+   [14]: app/Resources/doc/FrontEnd.md
    
    
    Enjoy!

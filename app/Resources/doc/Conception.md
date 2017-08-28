@@ -1,12 +1,9 @@
 # Conception
 
-Ce document va décrire les différentes entités et leur rôle. Il met en place le vocabulaire *unique* (et leurs noms en français).
-Dans le code, tout doit être en anglais.
-
 Ce document est divisé en différentes parties :
 
  * le "core" ici
- * [User](Conception/User.md) (`LawFirm`, `User`...)
+ * [User](Conception/User.md)
 
 
   
