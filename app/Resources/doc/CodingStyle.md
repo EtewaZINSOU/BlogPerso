@@ -29,7 +29,7 @@ On essaierai au maximum de les doter de méthodes "intelligentes", qui ont une s
 plutôt que d'utiliser que des getters et de faire le travail en dehors.
 Les accesseurs inutiles - par exemple permettant de modifier un champ non modifiable, comme une date de création - doivent être retirés.
 
-Par exemple, du `DriveItem` :
+Par exemple, du `UserItem` :
 
 ```php
     /**
@@ -49,23 +49,20 @@ Par exemple, du `DriveItem` :
      * @param DriveItem $parentDriveItem
      * @return DriveItem
      */
-    public function getCopy(User $user, DriveItem $parentDriveItem): DriveItem
+    public function getCopy(User $user, UserItem $parentUserItem): UserItem
     {
-        $driveItem = new self();
-        $driveItem->setName($this->getName());
-        $driveItem->setSize($this->getSize());
-        $driveItem->setType($this->type);
-        $driveItem->setMimeType($this->getMimeType());
-        $driveItem->setUser($user);
-        $driveItem->setParentDriveItem($parentDriveItem);
-        $driveItem->setSha1($this->getSha1());
+        $userItem = new self();
+        $userItem->setName($this->getName());
+        $userItem->setSize($this->getSize());
+        $userItem->setType($this->type);
+        $userItem->setMimeType($this->getMimeType());
+        $userItem->setUser($user);
+        $userItem->setParentDriveItem($parentDriveItem);
+        $userItem->setSha1($this->getSha1());
 
-        // Then we have to change name to avoid a conflict
-        if ($parentDriveItem->getUuid() === $this->parentDriveItem->getUuid()) {
-            $driveItem->setName($this->name.' (copie)');
-        }
+     
 
-        return $driveItem;
+        return $userItem;
     }
 ```
 

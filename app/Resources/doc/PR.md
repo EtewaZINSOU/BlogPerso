@@ -1,6 +1,6 @@
 # Critères pour une PR parfaite
 
-Nous fonctionnons en PR sur [Github](https://github.com/jarvislegal/jarvisv2) pour l'ensemble des modifications.
+Nous fonctionnons en PR sur [Github](https://github.com/EtewaZINSOU/BlogPerso) pour l'ensemble des modifications.
 
 Les critères pour qu'une PR soit mergée rapidemment sont :
  * code fini :)
