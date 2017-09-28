@@ -25,3 +25,6 @@ En un mot : L'automatisation. Moins vous avez de travail quand vous exécutez de
 Développé et exécuté aussi par le couple Javascript/NodeJS, Bower est un gestionnaire de dépendances pour le développement front-end.
 
 Pour faire une comparaison grossière, Bower est l'équivalent de Composer pour les librairies Javascript & CSS.
+
+### Tutoriels important
+https://www.baptiste-donaux.fr/grunt-symfony-remplacer-assetic/

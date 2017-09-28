@@ -23,13 +23,6 @@ Translator.trans('key', {count: 10});
 key: J'ai %count% bananes
 ```
 
-### ElFinder
-
-Il est nécessaire de préciser le domain pour ElFinder, et pour certaines traductions il faut également préciser la locale:
-```
-elFinder.prototype.i18.en.messages['cmdshareFolder'] = Translator.trans('commands.share_folder.label', {}, 'elfinder', 'en');
-elFinder.prototype.i18.fr.messages['cmdshareFolder'] = Translator.trans('commands.share_folder.label', {}, 'elfinder', 'fr');
-```
 
 ### Domaines utilisés par le Translator
 

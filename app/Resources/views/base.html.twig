@@ -1,13 +1,147 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}BlogPerso!{% endblock %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('vendors/bootstrap/dist/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('vendors/css/style.css') }}">
+  {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+
+{% block header %}
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Accueil</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Veille</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">A propos</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+{% endblock %}
+
+
+{% block body %}
+
+{% endblock %}
+
+
+
+{% block footer %}
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-top p-y-2">
+
+        </div>
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Address</h4>
+                            <address>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        City Hall<br>
+                                        212  Street<br>
+                                        Lawoma<br>
+                                        735<br>
+                                    </li>
+                                    <li>
+                                        Phone: 0
+                                    </li>
+                                </ul>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Popular Services</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#"></a></li>
+                                <li><a href="#">Payment Center</a></li>
+                                <li><a href="#">Contact Directory</a></li>
+                                <li><a href="#">Forms</a></li>
+                                <li><a href="#">News and Updates</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Website Information</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Website Tutorial</a></li>
+                                <li><a href="#">Accessibility</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Webmaster</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Popular Departments</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Parks and Recreation</a></li>
+                                <li><a href="#">Public Works</a></li>
+                                <li><a href="#">Police Department</a></li>
+                                <li><a href="#">Fire</a></li>
+                                <li><a href="#">Mayor and City Council</a></li>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!--Footer Bottom-->
+                        <p class="text-xs-center">&copy; Copyright 2016 - City of USA.  All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
+
+
+{% block javascripts %}
+    <script src="{{ asset('vendors/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('vendors/tether/dist/js/tether.min.js') }}" ></script>
+    <script src="{{ asset('vendors/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+{% endblock %}
+</body>
 </html>

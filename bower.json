@@ -1,0 +1,21 @@
+{
+  "name": "blogperso",
+  "homepage": "https://github.com/EtewaZINSOU/BlogPerso",
+  "authors": [
+    "Alexis ZINSOU <alexis.zinsou@enr-cert.com>"
+  ],
+  "description": "The blog to describe skills for each technologie",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}
