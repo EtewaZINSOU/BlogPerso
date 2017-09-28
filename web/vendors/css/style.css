@@ -52,3 +52,16 @@ footer a:hover{
     background: white;
     color: black;
 }
+
+
+.f-welcome {
+    font-size: 3.25em !important;
+}
+
+.f-welcome {
+    font-family: "Alegreya",Georgia,Times,serif;
+    font-size: 1.5em;
+    font-weight: normal !important;
+     margin-top: 2.4625em;
+     margin-bottom: .73125em;
+}

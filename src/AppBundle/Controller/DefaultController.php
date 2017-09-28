@@ -10,16 +10,41 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/", name="homepage")
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function indexAction(Request $request)
     {
-//        // replace this example code with whatever you need
-//        return $this->render('default/index.html.twig', [
-//            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-//        ]);
-
-        // replace this example code with whatever you need
         return $this->render('default/index.html.twig', []);
     }
 
+    /**
+     * @Route("/blog", name="blog")
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function blogAction(Request $request)
+    {
+        return $this->render('default/blog.html.twig',[]);
+    }
+
+    /**
+     * @Route("/watch", name="watch")
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function watchAction(Request $request)
+    {
+        return $this->render('default/watch.html.twig',[]);
+    }
+
+    /**
+     * @Route("/projects", name="projects")
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function projectsAction(Request $request)
+    {
+        return $this->render('default/projects.html.twig',[]);
+    }
 }
